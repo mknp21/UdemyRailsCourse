@@ -1,0 +1,28 @@
+Model View Controller (MVC) = separation of presentation layer 
+(front-end) and business-logic (back-end)
+
+Model = resources in the app
+- likely require database layer (tables accompanying models)
+- can use models to communicate with tables in the app
+
+View = visible/ front-end layer of app
+- html.erb, css, templates
+
+Controller = brains behind the app
+- how user requests are routed and handled
+
+General flow of Rails application:
+
+-> Request made at browser
+
+-> Request received at router of rails application
+
+-> Request routed to appropriate action in a controller
+
+-> Controller#action either renders a view template or communicates with model
+
+-> Model communicates with database
+
+-> Model sends back information to controller
+
+-> Controller renders view
